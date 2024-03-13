@@ -23,7 +23,7 @@ typedef struct Pack {
     int pk_len;
     int pk_lenu;
     unsigned char pk_buff[TAM_BUFF];
-}
+};
 
 //Variables de informacion de tramas
 
