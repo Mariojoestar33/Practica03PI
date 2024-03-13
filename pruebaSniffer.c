@@ -28,7 +28,7 @@ int main() {
     struct ifreq ifr;
 
     // Crear un socket raw
-    raw_socket = socket(AF_PACKET, SOCK_RAW, htons(ETH_P_ALL)); // Cambiado a ETH_P_ALL para capturar todos los tipos de protocolo Ethernet
+    raw_socket = socket(AF_PACKET, SOCK_RAW, htons(ETH_P_ALL));
     if (raw_socket < 0) {
         perror("Error al crear el socket");
         exit(EXIT_FAILURE);
@@ -53,22 +53,12 @@ int main() {
         // Analizar el encabezado Ethernet
         struct ethhdr *eth_header = (struct ethhdr *)buffer;
 
-        // Verificar si es un paquete IPv4 o IPv6
-        if (ntohs(eth_header->h_proto) == ETH_P_IP) {
-            printf("Este es un paquete IPv4.\n");
-        } else if (ntohs(eth_header->h_proto) == ETH_P_IPV6) {
-            printf("Este es un paquete IPv6.\n");
-        } else {
-            printf("Este paquete no es IPv4 ni IPv6.\n");
-            continue; // Saltar al siguiente paquete
-        }
-
         // Mostrar las direcciones MAC de origen y destino
-        printf("Dirección MAC de origen: %02x:%02x:%02x:%02x:%02x:%02x\n", 
+        printf("Dirección MAC origen: %02x:%02x:%02x:%02x:%02x:%02x\n", 
                eth_header->h_source[0], eth_header->h_source[1], eth_header->h_source[2], 
                eth_header->h_source[3], eth_header->h_source[4], eth_header->h_source[5]);
 
-        printf("Dirección MAC de destino: %02x:%02x:%02x:%02x:%02x:%02x\n", 
+        printf("Dirección MAC  destino: %02x:%02x:%02x:%02x:%02x:%02x\n", 
                eth_header->h_dest[0], eth_header->h_dest[1], eth_header->h_dest[2], 
                eth_header->h_dest[3], eth_header->h_dest[4], eth_header->h_dest[5]);
 
@@ -78,16 +68,27 @@ int main() {
 
         // Mostrar información básica del paquete
         printf("Versión IP: %d\n", ip_header->version);
-        printf("Longitud del encabezado IP: %d bytes\n", ip_header_length);
-        printf("Protocolo: %d\n", ip_header->protocol);
-        // Puedes agregar más información según tus necesidades
+
+        // Calcular la longitud de la trama y del campo de datos
+        unsigned int frame_length = packet_size;
+        unsigned int data_length = frame_length - sizeof(struct ethhdr) - ip_header_length;
+
+        // Mostrar la longitud de la trama y del campo de datos
+        printf("Longitud de la trama: %u bytes\n", frame_length);
+        printf("Longitud del campo de datos: %u bytes\n", data_length);
 
         // Guardar la información en un archivo de texto
         FILE *file = fopen("output.txt", "a");
+        fprintf(file, "Este es el paquete número %d:\n", packet_count + 1);
+        fprintf(file, "Dirección MAC de origen: %02x:%02x:%02x:%02x:%02x:%02x\n", 
+               eth_header->h_source[0], eth_header->h_source[1], eth_header->h_source[2], 
+               eth_header->h_source[3], eth_header->h_source[4], eth_header->h_source[5]);
+        fprintf(file, "Dirección MAC de destino: %02x:%02x:%02x:%02x:%02x:%02x\n", 
+               eth_header->h_dest[0], eth_header->h_dest[1], eth_header->h_dest[2], 
+               eth_header->h_dest[3], eth_header->h_dest[4], eth_header->h_dest[5]);
         fprintf(file, "Versión IP: %d\n", ip_header->version);
-        fprintf(file, "Longitud del encabezado IP: %d bytes\n", ip_header_length);
-        fprintf(file, "Protocolo: %d\n", ip_header->protocol);
-        // Agrega más información según tus necesidades
+        fprintf(file, "Longitud de la trama: %u bytes\n", frame_length);
+        fprintf(file, "Longitud del campo de datos: %u bytes\n\n", data_length);
         fclose(file);
 
         packet_count++;
@@ -98,4 +99,3 @@ int main() {
 
     return 0;
 }
-
