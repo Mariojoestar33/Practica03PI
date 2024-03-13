@@ -134,7 +134,7 @@ int main() {
     }
 
     // Lee el archivo línea por línea
-    while (fgets(line, MAX_LINE_LENGTH, file) != NULL) {
+    while (fgets(line, MAX_LINE_LENGTH, arch) != NULL) {
         // Busca las direcciones MAC de origen y destino
         if (sscanf(line, "Dirección MAC de origen: %s", mac_origen) == 1) {
             // Busca si la dirección MAC de origen ya está en la lista
@@ -172,6 +172,15 @@ int main() {
     for (int i = 0; i < macCount; i++) {
         printf("%s: %d\n", macList[i].mac, macList[i].frequency);
     }
+
+    // Guardar la información en un archivo de texto
+        FILE *archi = fopen("output.txt", "a");
+        fprintf(archi, "Frecuencia de cada dirección MAC:\n");
+    fprintf(archi, "---------------------------------\n");
+    for (int i = 0; i < macCount; i++) {
+        fprintf(archi, "%s: %d\n", macList[i].mac, macList[i].frequency);
+    }
+        fclose(archi);
 
     return 0;
 }
