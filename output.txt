@@ -1,0 +1,210 @@
+Este es el paquete número 1:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 2:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 3:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 78 bytes
+Longitud del campo de datos: 44 bytes
+
+Este es el paquete número 4:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 5:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 6:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 7:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 8:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 9:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 78 bytes
+Longitud del campo de datos: 44 bytes
+
+Este es el paquete número 10:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 11:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 12:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 13:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 78 bytes
+Longitud del campo de datos: 44 bytes
+
+Este es el paquete número 14:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 15:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 16:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 17:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 18:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 33:33:00:00:00:fb
+Versión IP: 6
+Longitud de la trama: 101 bytes
+Longitud del campo de datos: 87 bytes
+
+Este es el paquete número 19:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 01:00:5e:00:00:fb
+Versión IP: 4
+Longitud de la trama: 81 bytes
+Longitud del campo de datos: 47 bytes
+
+Este es el paquete número 20:
+Dirección MAC de origen: 00:00:00:00:00:00
+Dirección MAC de destino: 00:00:00:00:00:00
+Versión IP: 4
+Longitud de la trama: 81 bytes
+Longitud del campo de datos: 47 bytes
+
+Este es el paquete número 21:
+Dirección MAC de origen: 00:00:00:00:00:00
+Dirección MAC de destino: 00:00:00:00:00:00
+Versión IP: 4
+Longitud de la trama: 81 bytes
+Longitud del campo de datos: 47 bytes
+
+Este es el paquete número 22:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 78 bytes
+Longitud del campo de datos: 44 bytes
+
+Este es el paquete número 23:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 24:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 25:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 26:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 27:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
+Este es el paquete número 28:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 60 bytes
+Longitud del campo de datos: 26 bytes
+
+Este es el paquete número 29:
+Dirección MAC de origen: 52:54:00:12:35:02
+Dirección MAC de destino: 08:00:27:94:bd:37
+Versión IP: 4
+Longitud de la trama: 78 bytes
+Longitud del campo de datos: 44 bytes
+
+Este es el paquete número 30:
+Dirección MAC de origen: 08:00:27:94:bd:37
+Dirección MAC de destino: 52:54:00:12:35:02
+Versión IP: 4
+Longitud de la trama: 54 bytes
+Longitud del campo de datos: 20 bytes
+
